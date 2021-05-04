@@ -1,0 +1,43 @@
+.menu {
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item {
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        font-weight: normal;
+        line-height: 19px;
+        text-decoration: none;
+        color: #1B1B1B;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            display: block;
+            background-color: #61A199;
+            transition: all .2s ease;
+        }
+
+        &:hover::after{
+            width: 100%;
+        }
+    }
+}
+
+    

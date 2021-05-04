@@ -1,0 +1,26 @@
+.socials {
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 20px;
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+    }
+
+    &__link {
+        display: inline-block;
+    }
+
+    &__link:hover svg path {
+        fill: #00F9DD;
+        transition: .3s all ease-out;
+    }
+}

@@ -1,0 +1,19 @@
+.footer {
+    background: #3F3D56;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    &__copyright {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        opacity: 0.4;
+    }
+}

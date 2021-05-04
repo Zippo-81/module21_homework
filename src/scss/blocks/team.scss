@@ -1,0 +1,45 @@
+.team {
+    &__wrap {
+        padding-left: 200px;
+        padding-right: 200px;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__wrap {
+        padding-top: 80px;
+        padding-bottom: 120px;
+    }
+
+    &__item {
+        padding-bottom: 60px;
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 1;
+        margin: 0;
+        margin-bottom: 55px;
+    }
+
+    &__name {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1;
+        margin-top: 23px;
+        margin-bottom: 8px;
+    }
+
+    &__position {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1;
+        margin: 0;
+    }
+}

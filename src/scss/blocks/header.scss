@@ -1,0 +1,45 @@
+.header {
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 31px;
+        padding-bottom: 31px;
+    }
+
+    &__logo {
+        flex-basis: 150px;
+    }
+
+    &__nav {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__auth {
+        width: 106px;
+        height: 43px;
+        border: 1px solid rgba(27, 27, 27, 0.4);
+        border-radius: 6px;
+        background: none;
+        cursor: pointer;
+        transition: all .2s ease;
+
+        &:hover {
+            color: #fff;
+            background: #61A199;
+            border-color: #fff;
+        }
+    }
+
+    &__humburger {
+        margin-right: 20px;
+    }
+    
+    &__wrap--mobile {
+        display: flex;
+    }
+
+}

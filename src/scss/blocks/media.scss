@@ -1,0 +1,337 @@
+
+
+
+@media (max-width: 1199px) {
+    .about {
+        &__wrap {
+            padding: 81px 100px 20px 100px;
+        }
+        &__img {
+            margin-bottom: 50px;
+        }
+        &__title {
+            font-size: 45px;
+        }
+        &__text {
+            font-size: 16px;
+        }
+    }
+
+    .contacts {
+        &__wrap {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        &__title {
+            font-size: 45px;
+        }
+    }
+
+    .team {
+        &__wrap {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        &__title {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        &__item {
+            padding-bottom: 30px;
+        }
+    }
+
+    .faq {
+        &__wrap {
+            padding-top: 100px;
+            padding-bottom: 120px;
+        }
+
+        &__expandedBlock {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        &__title {
+            font-size: 45px;
+        }
+
+        &__description {
+            font-size: 16px;
+        }
+    }
+
+    .faqBlock {
+        &__button {
+            font-size: 16px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+
+    .footer__wrap {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.95);
+        z-index: 99;
+
+        &__wrap--mobile {
+            flex-direction: column;
+            position: absolute;
+            top: -1000px;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        &__auth {
+            position: absolute;
+            bottom: 120px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &__nav {
+            position: absolute;
+            top: 20%;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    .humburger {
+        display: block;
+
+        &--active span {
+            display: none;
+        }
+
+        &--active::after {
+            transform: rotate(45deg);
+            bottom: 6px;
+            transition: all .2s ease;
+        }
+        &--active::before {
+            transform: rotate(-45deg);
+            top: 5px;
+            transition: all .2s ease;
+        }
+    }
+
+    .menu {
+        &__list {
+            display: block;
+            width: 90%;
+            text-align: center;
+        }
+
+        &__item {
+            margin-right: 0;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid #DCE0ED;
+        }
+
+        &__item:last-child {
+            border-bottom: none;
+        }
+
+        &--show {
+            top: 93px;
+            transition: all .7s ease;
+        }  
+    }
+
+    .about {
+        &__wrap {
+            padding: 81px 40px 40px 40px;
+        }
+
+        &__text {
+            text-align: center;
+        }
+    }
+
+    .contacts {
+        &__mailBlock {
+            padding-right: 20px;
+        }
+        &__phoneBlock {
+            padding-left: 20px;
+        }
+    }
+
+    .faq {
+        &__expandedBlock {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        &__title {
+            font-size: 32px;
+        }
+        &__description {
+            font-size: 16px;
+        }
+    }
+
+    .faqBlock {
+        &__button {
+            font-size: 14px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+    .contacts {
+        &__block {
+            flex-direction: column;
+        }
+        &__mailBlock {
+            padding-right: 0;
+            border-right: none;
+            border-bottom: 1px solid #C8C8CF;
+        }
+        &__phoneBlock {
+            padding-left: 0;
+        } 
+    }
+
+    .team {
+        &__wrap {
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+
+        &__list {
+            justify-content: space-between;
+        }
+        
+        &__item {
+            margin: 10px;
+            flex-basis: 40%;
+            padding-bottom: 30px;
+        }
+
+        &__name {
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        &__position {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .about {
+        &__img {
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        &__text {
+            margin: 0;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+
+    .contacts {
+        &__wrap {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        &__title {
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+
+        &__mailBlock {
+            border-bottom: none;
+        }
+
+        &__name {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        &__mail {
+            margin-bottom: 25px;
+        }
+    }
+
+    .team {
+        &__title {
+            font-size: 24px;
+        }
+
+        &__item {
+            margin: 0;
+            flex-basis: 45%;
+        }
+
+        &__img {
+            max-width: 80px;
+        }
+    }
+
+    .faq {
+        &__wrap {
+            padding-bottom: 50px;
+        }
+
+        &__title {
+            margin-top: 40px;
+        }
+
+        &__description {
+            margin-top: 15px;
+        }
+
+        &__expandedBlock {
+            padding-left: 0;
+            padding-right: 0;
+            margin-top: 30px;
+        }
+    }
+
+    .footer {
+        &__wrap {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__copyright {
+            margin-bottom: 17px;
+        }
+    }
+}

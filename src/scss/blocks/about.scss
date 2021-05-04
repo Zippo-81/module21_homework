@@ -1,0 +1,24 @@
+.about {
+    &__wrap {
+        padding: 81px 258px;
+        text-align: center;
+    }
+
+    &__img {
+        margin-bottom: 62px;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 120%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 147.3%;
+        text-align: left;
+    }
+}

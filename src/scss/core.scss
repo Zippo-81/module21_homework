@@ -1,0 +1,47 @@
+//@charset "UTF-8";
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+	font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+    background-color: #fff;
+    color: $primaryColorText;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    min-width: 375px;
+    max-width: 100%;
+}
+
+.wrap {
+    @include min-max(375px, 1440px, 40px);
+}
+
+.visually-hidden {
+	border: 0; 
+    clip: rect(0 0 0 0); 
+    -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    height: 1px; 
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
